@@ -8,7 +8,6 @@
 } */
 
 body {
-  padding: 0;
   margin: 0;
 }
 
@@ -30,16 +29,20 @@ body{
 
   /* background-color:rgb(170, 236, 164); */
 }
+:root{
+  --font-size:calc(var(--width)/10);
+  --width: 400px;
+}
 
 .calc {
-  width: 400px;
+  width: var(--width);
   background-color: black;
   color: white;
 }
 
 .screen {
   color: white;
-  font-size: 40px;
+  font-size: var(--font-size);
   font-family: "Courier New", Courier, monospace;
   text-align: right;
   padding: 20px 5px;
@@ -52,7 +55,7 @@ body{
   width: 24.5%;
   border: none;
   border-radius: 0;
-  font-size: 40px;
+  font-size: var(--font-size);
   cursor: pointer;
 }
 
@@ -94,4 +97,59 @@ body{
 
 .calc-button-row:last-child {
   padding-bottom: 0;
+}
+@media (min-width:400px){
+.calc{
+  width: 60%;
+  --font-size:calc(var(--width)/18);
+}
+body{
+  padding: 1rem;
+}
+.calc-button {
+  height: calc(var(--width)/5);
+}
+}
+
+
+@media (min-width:750px){
+.calc{
+  width: 50%;
+  --font-size:calc(var(--width)/16);
+}
+body{
+  padding: 1rem;
+}
+.calc-button {
+  height: calc(var(--width)/4.5);
+}
+}
+
+
+@media (min-width:950px){
+.calc{
+  width: 40%;
+  --font-size:calc(var(--width)/13);
+}
+body{
+  padding: 1rem;
+}
+.calc-button {
+  height: calc(var(--width)/4.5);
+}
+}
+
+
+@media (min-width:1200px){
+  .calc{
+    --width: 400px;
+    width: var(--width);
+    --font-size:calc(var(--width)/10);
+  }
+      body{
+        padding:1.5rem;
+      }
+      .calc-button{
+        height: calc(var(--width)/4);
+      }
 }
