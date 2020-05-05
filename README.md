@@ -14,7 +14,7 @@
 
 
 ``` 
-To do some calculation push enter the figure , the symbole e.g plus , the next figure and enter  the equality symbole to get your answer.
+To do some calculation  enter the figure , the symbole e.g plus , the next figure and enter  the equality symbole to get your answer.
 ```
 ```
 Note that after you have immediately after you entered figure, when you click on a symbole the display on the screen changes to "0".
